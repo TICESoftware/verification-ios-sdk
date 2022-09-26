@@ -24,7 +24,7 @@ let package = Package(
     targets: [
         .target(
             name: "Verification",
-            dependencies: ["Alamofire", .product(name: "Reachability", package: "Reachability.swift"), .product(name: "CocoaLumberjackSwift", package: "CocoaLumberjack"), "PhoneNumberKit", "Mocker"]),
+            dependencies: ["Alamofire", .product(name: "Reachability", package: "Reachability.swift"), .product(name: "CocoaLumberjackSwift", package: "CocoaLumberjack"), "PhoneNumberKit"]),
         .testTarget(
             name: "VerificationTests",
             dependencies: ["Verification", "Mocker"])
